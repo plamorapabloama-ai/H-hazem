@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f97316" />
+      <stop offset="55%" stop-color="#ea580c" />
+      <stop offset="100%" stop-color="#1e1e1e" />
+    </linearGradient>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fed7aa" />
+      <stop offset="100%" stop-color="#f97316" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#1e1e1e" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Card Background -->
+  <rect width="512" height="512" rx="116" fill="url(#bgGrad)" />
+
+  <!-- Accent circles -->
+  <circle cx="70" cy="380" r="120" fill="#ffffff" opacity="0.06"/>
+  <circle cx="460" cy="110" r="90" fill="#ffffff" opacity="0.06"/>
+
+  <!-- Center Badge -->
+  <circle cx="256" cy="256" r="186" fill="#ffffff" filter="url(#glow)"/>
+
+  <!-- Inner baby face circle -->
+  <circle cx="256" cy="226" r="116" fill="#fde68a" stroke="#f97316" stroke-width="6"/>
+
+  <!-- Eyes -->
+  <circle cx="212" cy="208" r="13" fill="#1e1e1e"/>
+  <circle cx="300" cy="208" r="13" fill="#1e1e1e"/>
+  <circle cx="217" cy="202" r="4.5" fill="#ffffff"/>
+  <circle cx="305" cy="202" r="4.5" fill="#ffffff"/>
+
+  <!-- Cheeks -->
+  <circle cx="196" cy="252" r="13" fill="#fca5a5" opacity="0.85"/>
+  <circle cx="316" cy="252" r="13" fill="#fca5a5" opacity="0.85"/>
+
+  <!-- Smile -->
+  <path d="M222 268 Q 256 298 290 268" fill="none" stroke="#92400e" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Cute hair curls on top -->
+  <path d="M196 120 Q 218 92 244 112" fill="none" stroke="#78350f" stroke-width="9" stroke-linecap="round"/>
+  <path d="M244 112 Q 272 86 300 112" fill="none" stroke="#78350f" stroke-width="9" stroke-linecap="round"/>
+  <path d="M300 112 Q 316 104 322 92" fill="none" stroke="#78350f" stroke-width="9" stroke-linecap="round"/>
+
+  <!-- Two little leaves sprouting from top -->
+  <path d="M256 40 Q 232 20 244 84 Q 262 92 256 40 Z" fill="url(#leafGrad)"/>
+  <path d="M256 40 Q 280 20 268 84 Q 250 92 256 40 Z" fill="#fb923c"/>
+
+  <!-- Bottom growing plant -->
+  <rect x="248" y="400" width="16" height="72" rx="8" fill="#1e1e1e"/>
+  <path d="M256 420 Q 210 404 214 350 Q 246 356 256 420 Z" fill="url(#leafGrad)"/>
+  <path d="M256 392 Q 302 372 300 320 Q 266 334 256 392 Z" fill="#fb923c"/>
+
+  <!-- Star accents -->
+  <path d="M120 120 l8 20 21 2 -16 14 5 21 -18 -11 -18 11 5 -21 -16 -14 21 -2 Z" fill="#fbbf24"/>
+  <path d="M408 330 l7 17 18 2 -13 12 4 17 -16 -10 -16 10 4 -17 -13 -12 18 -2 Z" fill="#fbbf24"/>
+</svg>

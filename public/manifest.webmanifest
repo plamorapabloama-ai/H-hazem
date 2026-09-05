@@ -1,0 +1,20 @@
+﻿{
+  "name": "نظام إدارة الموارد البشرية والرواتب",
+  "short_name": "HR System",
+  "description": "نظام إدارة الموارد البشرية ومسير الرواتب وفقاً لقانون العمل والتأمينات المصري",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1e1e1e",
+  "theme_color": "#f97316",
+  "orientation": "portrait",
+  "dir": "rtl",
+  "lang": "ar-EG",
+  "icons": [
+    {
+      "src": "/nursery-icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

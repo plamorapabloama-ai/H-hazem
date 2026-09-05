@@ -1,0 +1,65 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --text-primary: #0F172A;
+    --text-secondary: #475569;
+    --text-muted: #94A3B8;
+    --bg-page: #F1F5F9;
+    --bg-surface: #FFFFFF;
+    --bg-card: #FFFFFF;
+    --bg-elevated: #F8FAFC;
+    --bg-input: #FFFFFF;
+    --border-color: #E2E8F0;
+    --border-strong: #CBD5E1;
+    --color-primary: #F97316;
+    --color-primary-hover: #EA580C;
+    --color-success: #22C55E;
+    --color-warning: #F59E0B;
+    --color-error: #EF4444;
+    --color-info: #3B82F6;
+    --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1);
+  }
+
+  .dark {
+    color-scheme: dark;
+    --text-primary: #F1F5F9;
+    --text-secondary: #CBD5E1;
+    --text-muted: #94A3B8;
+    --bg-page: #0F172A;
+    --bg-surface: #1E293B;
+    --bg-card: #1E293B;
+    --bg-elevated: #273449;
+    --bg-input: #1E293B;
+    --border-color: #334155;
+    --border-strong: #475569;
+    --color-primary: #FB923C;
+    --color-primary-hover: #F97316;
+    --color-success: #4ADE80;
+    --color-warning: #FBBF24;
+    --color-error: #F87171;
+    --color-info: #60A5FA;
+    --shadow-sm: 0 1px 2px rgba(0,0,0,0.3);
+    --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.4);
+  }
+
+  body {
+    font-family: 'Cairo', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer components {
+  .theme-page { @apply bg-slate-100 dark:bg-[#0F172A]; }
+  .theme-surface { @apply bg-white dark:bg-[#1E293B]; }
+  .theme-card { @apply bg-white dark:bg-[#1E293B] border border-slate-200 dark:border-[#334155]; }
+  .theme-elevated { @apply bg-slate-50 dark:bg-[#273449]; }
+  .theme-input { @apply bg-white dark:bg-[#1E293B] border border-slate-200 dark:border-[#334155] text-slate-900 dark:text-[#F1F5F9]; }
+  .theme-text-primary { @apply text-slate-900 dark:text-[#F1F5F9]; }
+  .theme-text-secondary { @apply text-slate-600 dark:text-[#CBD5E1]; }
+  .theme-text-muted { @apply text-slate-400 dark:text-[#94A3B8]; }
+  .theme-border { @apply border-slate-200 dark:border-[#334155]; }
+  .theme-border-strong { @apply border-slate-300 dark:border-[#475569]; }
+}
